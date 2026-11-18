@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#192c25"><title>ChessOpenings · Repertoire studio</title><link rel="stylesheet" href="./style.css"></head><body>
+<header><div class="brand"><span class="mark">♞</span> ChessOpenings</div><span class="header-note">Repertoire studio</span></header>
+<main><section class="heading"><div><h1>Opening studio</h1><p>Build your repertoire and practice each line from memory.</p></div><div class="tabs"><button id="record">Record</button><button id="practice">Practice</button></div></section>
+<div class="layout"><aside><div class="section-title"><h2>Repertoire</h2><button id="newOpening" aria-label="Create opening" title="Create opening">+</button></div><nav id="library"></nav></aside>
+<section class="board-panel"><div class="board-head"><h2 id="boardTitle"></h2><button id="flip">Flip board ↻</button></div><div id="board" aria-label="Chessboard"></div><div class="board-foot"><span id="turn"></span><span id="position"></span></div></section>
+<section class="editor"><h2 id="editorTitle"></h2><div id="controls"></div><div id="moves"></div><p id="feedback" role="status"></p><div id="actions"></div></section></div></main>
+<dialog id="dialog"><form method="dialog"><h2 id="dialogTitle"></h2><div id="fields"></div><p id="dialogError" role="status"></p><footer><button value="cancel" formnovalidate>Cancel</button><button class="primary" id="confirm" value="ok">Save</button></footer></form></dialog>
+<script type="module" src="./app.js"></script></body></html>
